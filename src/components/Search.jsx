@@ -5,7 +5,7 @@ const Search = ({setSearchValue}) => {
 
     //reikes apsirasyti funkcija
     const handleSubmit = (e) => {
-        e.preventDefault();
+        e.preventDefault(); //jeigu yra form elementas
 
         if(movieTitle===''){  //jeigu laukas tuscias
             alert("ivest pavadinima")

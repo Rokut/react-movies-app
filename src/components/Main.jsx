@@ -44,7 +44,7 @@ useEffect(()=>{
     <div>
         <h1>Main</h1>
         <Search setSearchValue={setSearchValue}/>
-        <Films films={films}/>
+        {films['Response'] === 'True' ? <Films films={films} /> : ''}
     </div>
   )
 }
